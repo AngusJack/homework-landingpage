@@ -1,0 +1,211 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	color: #000;
+	line-height: 1.5;
+	font-family: 'Open Sans', san-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+	max-width: 90%;
+  margin: 0 auto;
+  width: 1024px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.intro {
+	background: url("../images/header_bg.jpg") no-repeat center top rgb(134,141,157);
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.intro h2 {
+	color: white;
+	padding-bottom: 20px;
+}
+
+.intro {
+	text-align: center;
+}
+}
+
+.benefits {
+	background-color: #f0efef;
+}
+
+.benefits h2 {
+	padding-top: 30px;
+	color: #033048;
+}
+.benefits ul {
+ 	padding-left: 80px;
+ 	padding-bottom: 30px;
+}
+
+.quote {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: url("../images/testimonial_bg.jpg")
+}
+h1 {
+	position: absolute;
+	padding-left: 75px;
+	color: white;
+}
+
+h1, .brand {
+	font-weight: 800;
+}
+
+h2, .name {
+	font-weight: 600;
+}
+
+a {
+	font-weight: 600; /* or should these 600s (semibold) be 400 (with 600 just meaning normal bold?)*/
+	border-radius: 5px;
+	background-color: #f9e42e;
+	text-decoration: none;
+	color: #033048;
+}
+
+.intro a {
+	padding: 10px 50px;
+}
+
+p, li {
+	font-weight: 300;
+}
+
+blockquote {
+	font-weight: 300i;
+	/*font-style: italic;*/
+	color: white;
+	text-align: center;
+}
+
+.cta {
+	text-align: center;
+	background-color: #f9e42e;
+	padding: 35px;
+}
+
+.cta a {
+	background-color: #033048;
+	color: white;
+	padding: 10px 55px;
+	margin-top: 30px;
+}
+
+.name {
+	color: white;
+	text-align: center
+}
+
+
+footer{
+	margin-top: -20px;
+	background-color: #121212;
+	text-align: center;
+}
+
+footer h2 {
+	margin-top: 20px;
+	text-align: center;
+	padding: 30px;
+}
+
+footer p {
+	color: white;
+	text-align: center;
+	padding: 30px;
+}
+
+.brand {
+	color: #f9e42e;
+}
+
+ footer img {
+	padding: 20px;
+ }
+
+footer ul li {
+	display: inline;
+}
+/*
+benefits background color: #f0efef
+yellow: #f9e42e
+dark blue: #033048
+light grey: #606161
+almost black: #121212
+
+Font: Open Sans (Google Font: "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800")
+Weight: Light, Light Italic, Semibold, Extrabold
+
+"Get it Now" - Extra bold, 5px border radius
+"Benefits" - Semibold
+"The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be." - Light
+• Schedule meetings for you
+• Excel automation to complete your work for you
+• Responds to emails on your behalf
+• Does all your work for you with our revolutionary AI technology" - Light
+
+"“Relaxr changed my life. I’ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work.”" - Light Italic
+"- Amanda, Intuit " - semibold
+
+"Sign Up Now!" - extra bold, 5px border radius
+
+Relaxr - extra bold
+"Copyright 2015. Relaxr." - semibold
+
+
+
+
+
+
+
+
+
+
+
+
