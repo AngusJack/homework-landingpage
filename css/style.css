@@ -11,7 +11,7 @@ Developer @GA in NYC
 /*******************************************/
 
 /* Box Model Hack */
-* {
+*, *:before, *:after { 
   box-sizing: border-box;
 }
 
@@ -57,6 +57,7 @@ body {
 	background-size: cover;
 	padding-top: 200px;
 	padding-bottom: 200px;
+	margin-top: 130px
 }
 
 .intro h2 {
@@ -66,6 +67,12 @@ body {
 
 .intro {
 	text-align: center;
+	margin-top: 110px;
+}
+
+a.introcta {
+	font-weight: 800;
+	border-radius: 5px;
 }
 }
 
@@ -74,12 +81,17 @@ body {
 }
 
 .benefits h2 {
+	margin-top: -20px;
 	padding-top: 30px;
 	color: #033048;
 }
 .benefits ul {
  	padding-left: 80px;
- 	padding-bottom: 30px;
+ 	padding-bottom: 50px;
+ 	margin-bottom: -20px;
+}
+section.benefts {
+	padding: 20px;
 }
 
 .quote {
@@ -95,14 +107,19 @@ h1 {
 
 h1, .brand {
 	font-weight: 800;
+	font-size:50px;
 }
 
 h2, .name {
 	font-weight: 600;
 }
 
+h3 {
+	font-weight: 800;
+}
+
 a {
-	font-weight: 600; /* or should these 600s (semibold) be 400 (with 600 just meaning normal bold?)*/
+	font-weight: 600;
 	border-radius: 5px;
 	background-color: #f9e42e;
 	text-decoration: none;
@@ -118,8 +135,8 @@ p, li {
 }
 
 blockquote {
-	font-weight: 300i;
-	/*font-style: italic;*/
+	font-weight: 300;
+	font-style: italic;
 	color: white;
 	text-align: center;
 }
@@ -172,40 +189,106 @@ footer p {
 footer ul li {
 	display: inline;
 }
-/*
-benefits background color: #f0efef
-yellow: #f9e42e
-dark blue: #033048
-light grey: #606161
-almost black: #121212
 
-Font: Open Sans (Google Font: "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800")
-Weight: Light, Light Italic, Semibold, Extrabold
+header  {
+	overflow: hidden;
+	background-color: #033048;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-bottom: 0px;
+}
 
-"Get it Now" - Extra bold, 5px border radius
-"Benefits" - Semibold
-"The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be." - Light
-• Schedule meetings for you
-• Excel automation to complete your work for you
-• Responds to emails on your behalf
-• Does all your work for you with our revolutionary AI technology" - Light
+nav.clearfix {
+	font-weight: 600;
+}
 
-"“Relaxr changed my life. I’ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work.”" - Light Italic
-"- Amanda, Intuit " - semibold
+nav ul {
+	float: right;
+	display: inline-block;
+}
 
-"Sign Up Now!" - extra bold, 5px border radius
+nav li {
+    float: left;
+    list-style-type: none;
+    margin-right: 25px;
+    margin-top: 30px;
 
-Relaxr - extra bold
-"Copyright 2015. Relaxr." - semibold
+}
 
+nav a {
+    display: block;
+    padding: 15px;
+    background-color: #033048;
+	color: #f9e42e;
+	font-size: 25px;
+}
 
+main {
+	margin-top: 200px;
+}
 
+main.column {
+	margin-top: 200px;
+	float: left;
+	width: 620px;
+	margin-bottom: 40px;
+}
 
+aside.column{
+	margin-top: 200px;
+	float: right;
+	width: 250px;
+}
 
+aside.column.adunit {
+	margin-top: 20px;
+	padding-bottom: 300px;
+	background-color: white;
+	text-align: center;
+}
 
+section {
+	background-color: #f0efef;
+}
 
+/*p:first-child:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 
+}*/ /*couldn't work out why this wouldn't work for me!*/
 
+a:hover{
+	background-color: ghostwhite;
+}
 
+span {
+  color: black;
+  float: left;
+  font-family: Open Sans;
+  font-size: 75px;
+  line-height: 60px;
+  font-weight: 600;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
 
+.more {
+	font-weight: 600;
+	float: right;
+}
 
+.learn {
+		font-weight: 600;
+}
+
+.blockquote {
+ font-weight: 600;
+ }
